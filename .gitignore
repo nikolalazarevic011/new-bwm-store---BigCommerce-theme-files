@@ -1,0 +1,55 @@
+# BigCommerce Stencil / theme .gitignore
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log
+
+# Build / distribution / temporary files
+dist/
+build/
+tmp/
+.temp/
+.cache/
+coverage/
+.nyc_output/
+
+# Stencil CLI local files
+.stencil
+.stencil.cache/
+.stencil-* 
+.stencil-store.json
+
+# Local env / secrets
+.env
+.env.*.local
+local.json
+secrets.json
+
+# Package manager lock files (optional — keep if you want deterministic installs)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.iml
+
+# Logs
+logs/
+*.log
+
+# Other
+*.tmp
+*.bak
+*.swp

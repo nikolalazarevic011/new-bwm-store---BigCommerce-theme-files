@@ -1,0 +1,95 @@
+╔════════════════════════════════════════════════════════════════╗
+║     BigCommerce Stencil Theme - Setup Checklist               ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ COMPLETED:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✅ Node 20.11.1 installed
+  ✅ npm 10.2.4 installed
+  ✅ Stencil CLI 8.10.4 installed globally
+  ✅ Project dependencies installed (1199 packages)
+  ✅ JavaScript bundles built successfully
+  ✅ Helper batch file created (start-dev.bat)
+
+📋 NEXT STEPS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ⬜ Get BigCommerce Store API Token
+
+   Instructions:
+   - Log in to BigCommerce admin panel
+   - Go to: Settings → API → Store-level API Accounts
+   - Click "Create API Account"
+   - Set scopes:
+     ✓ Themes: modify
+     ✓ Store Information: read-only
+   - Save and copy the Access Token (you won't see it again!)
+
+2. ⬜ Configure Stencil CLI
+
+   Open Command Prompt and run:
+
+   nvm use 20.11.1
+   cd "C:\Nikola\ME\New BWM Store\theme code"
+   stencil init
+
+   Enter when prompted:
+   - Store URL: https://yourstore.mybigcommerce.com
+   - Access Token: [paste the token from step 1]
+   - Port: 3000 (or press Enter for default)
+
+3. ⬜ Start Development Server
+
+   Double-click: start-dev.bat
+
+   OR run manually:
+
+   nvm use 20.11.1
+   stencil start
+
+4. ⬜ Open Browser
+
+   Navigate to: http://localhost:3000
+
+   You should see your BigCommerce store theme running locally!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 DAILY WORKFLOW:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Every time you start working:
+
+1. Double-click: start-dev.bat
+   OR
+   Run in Command Prompt:
+   - nvm use 20.11.1
+   - stencil start
+
+2. Open browser: http://localhost:3000
+
+3. Start coding! Changes auto-reload.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📄 QUICK-START.md          - Read this first!
+📄 STARTUP-MANUAL.md        - Complete development guide
+📄 WINDOWS-SETUP-FIX.md     - Windows-specific troubleshooting
+📄 CLAUDE.md                - Architecture documentation
+📄 README.md                - Original Cornerstone docs
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️  IMPORTANT REMINDERS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️  Always run "nvm use 20.11.1" before any npm/stencil commands
+⚠️  Never commit .stencil file (contains your API token)
+⚠️  The .stencil file is already in .gitignore - keep it that way
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Need help? Check the documentation files above!

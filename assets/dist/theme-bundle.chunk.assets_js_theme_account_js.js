@@ -5,11 +5,11 @@
 /*!************************************!*\
   !*** ./assets/js/theme/account.js ***!
   \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ Account; }
+/* harmony export */   "default": () => (/* binding */ Account)
 /* harmony export */ });
 /* harmony import */ var lodash_find__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash/find */ "./node_modules/lodash/find.js");
 /* harmony import */ var lodash_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_find__WEBPACK_IMPORTED_MODULE_0__);
@@ -518,14 +518,14 @@ var Account = /*#__PURE__*/function (_PageManager) {
 /*!**************************************************!*\
   !*** ./assets/js/theme/common/payment-method.js ***!
   \**************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Formatters: function() { return /* binding */ Formatters; },
-/* harmony export */   Validators: function() { return /* binding */ Validators; },
-/* harmony export */   creditCardType: function() { return /* binding */ creditCardType; },
-/* harmony export */   storeInstrument: function() { return /* binding */ storeInstrument; }
+/* harmony export */   Formatters: () => (/* binding */ Formatters),
+/* harmony export */   Validators: () => (/* binding */ Validators),
+/* harmony export */   creditCardType: () => (/* binding */ creditCardType),
+/* harmony export */   storeInstrument: () => (/* binding */ storeInstrument)
 /* harmony export */ });
 /* harmony import */ var creditcards__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! creditcards */ "./node_modules/creditcards/index.js");
 /* harmony import */ var creditcards__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(creditcards__WEBPACK_IMPORTED_MODULE_0__);
@@ -745,11 +745,11 @@ var Validators = {
 /*!****************************************************!*\
   !*** ./assets/js/theme/global/compare-products.js ***!
   \****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modal */ "./assets/js/theme/global/modal.js");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.min.js");

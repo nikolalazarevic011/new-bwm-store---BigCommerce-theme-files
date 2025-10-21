@@ -5,11 +5,11 @@
 /*!**************************************************************!*\
   !*** ./assets/js/theme/common/gift-certificate-validator.js ***!
   \**************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(cert) {
   if (typeof cert !== 'string' || cert.length === 0) {
@@ -26,11 +26,11 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************************************!*\
   !*** ./assets/js/theme/common/utils/translations-utils.js ***!
   \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   createTranslationDictionary: function() { return /* binding */ createTranslationDictionary; }
+/* harmony export */   createTranslationDictionary: () => (/* binding */ createTranslationDictionary)
 /* harmony export */ });
 var TRANSLATIONS = 'translations';
 var isTranslationDictionaryNotEmpty = function isTranslationDictionaryNotEmpty(dictionary) {
@@ -72,11 +72,11 @@ var createTranslationDictionary = function createTranslationDictionary(context) 
 /*!*********************************************!*\
   !*** ./assets/js/theme/gift-certificate.js ***!
   \*********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ GiftCertificate; }
+/* harmony export */   "default": () => (/* binding */ GiftCertificate)
 /* harmony export */ });
 /* harmony import */ var _page_manager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-manager */ "./assets/js/theme/page-manager.js");
 /* harmony import */ var _common_nod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common/nod */ "./assets/js/theme/common/nod.js");

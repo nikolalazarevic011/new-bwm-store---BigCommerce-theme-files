@@ -5,11 +5,11 @@
 /*!************************************!*\
   !*** ./assets/js/theme/product.js ***!
   \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ Product; }
+/* harmony export */   "default": () => (/* binding */ Product)
 /* harmony export */ });
 /* harmony import */ var _page_manager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-manager */ "./assets/js/theme/page-manager.js");
 /* harmony import */ var _product_reviews__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./product/reviews */ "./assets/js/theme/product/reviews.js");
@@ -105,12 +105,12 @@ var Product = /*#__PURE__*/function (_PageManager) {
 /*!**************************************************!*\
   !*** ./assets/js/theme/product/video-gallery.js ***!
   \**************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   VideoGallery: function() { return /* binding */ VideoGallery; },
-/* harmony export */   "default": function() { return /* binding */ videoGallery; }
+/* harmony export */   VideoGallery: () => (/* binding */ VideoGallery),
+/* harmony export */   "default": () => (/* binding */ videoGallery)
 /* harmony export */ });
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.min.js");
 var VideoGallery = /*#__PURE__*/function () {

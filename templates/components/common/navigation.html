@@ -1,3 +1,8 @@
+<!-- Demo Promotional Banner -->
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 0; text-align: center; font-size: 13px; font-weight: 500;">
+    🎉 DEMO MODE: Free Shipping on Orders Over $50 | New Spring Collection Now Available! 🌸
+</div>
+
 <nav class="navUser">
     {{#or customer (unless settings.hide_price_from_guests)}}
         {{> components/common/currency-selector}}
@@ -50,6 +55,11 @@
             >
                 {{lang 'common.search'}}
             </button>
+        </li>
+        <li class="navUser-item">
+            <a class="navUser-action" href="#" aria-label="New Arrivals" style="color: #667eea; font-weight: 600;">
+                ✨ New Arrivals
+            </a>
         </li>
         {{#if settings.gift_certificates_enabled}}
             <li class="navUser-item">

@@ -9,19 +9,79 @@
         {{/each}}
     </div>
 {{/if}}
-<footer class="footer" role="contentinfo">
+
+<!-- Demo: Pre-Footer CTA Section (Editable from Backend) -->
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 20px; text-align: center; color: white;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <h2 style="font-size: 32px; margin-bottom: 15px; font-weight: 700;">{{theme_settings.demo_footer_newsletter_heading}}</h2>
+        <p style="font-size: 18px; margin-bottom: 30px; opacity: 0.95;">{{theme_settings.demo_footer_newsletter_text}}</p>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px; max-width: 500px; margin: 0 auto; flex-wrap: wrap;">
+            <input type="email" placeholder="Enter your email" style="flex: 1; min-width: 250px; padding: 15px 20px; border: none; border-radius: 50px; font-size: 16px;">
+            <button style="padding: 15px 40px; background: white; color: #667eea; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; font-size: 16px; white-space: nowrap;">Subscribe Now</button>
+        </div>
+    </div>
+</div>
+
+<footer class="footer" role="contentinfo" style="background: #2d3748; color: #e2e8f0;">
     <h2 class="footer-title-sr-only">{{lang 'footer.title'}}</h2>
-    <div class="container">
+    <div class="container" style="padding: 50px 20px 20px;"
+        <!-- Demo: Modern Footer Grid Layout -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; margin-bottom: 40px;">
+
+            <!-- Company Info Column (Editable from Backend) -->
+            <div>
+                <h3 style="color: white; font-size: 18px; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid #667eea; padding-bottom: 10px; display: inline-block;">About Us</h3>
+                <p style="line-height: 1.6; margin-bottom: 15px; opacity: 0.85;">{{theme_settings.demo_footer_about_text}}</p>
+                <div style="margin-top: 20px;">
+                    <a href="tel:{{theme_settings.demo_footer_phone}}" style="color: #667eea; display: block; margin-bottom: 8px;">📞 {{theme_settings.demo_footer_phone}}</a>
+                    <a href="mailto:{{theme_settings.demo_footer_email}}" style="color: #667eea; display: block;">✉️ {{theme_settings.demo_footer_email}}</a>
+                </div>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div>
+                <h3 style="color: white; font-size: 18px; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid #667eea; padding-bottom: 10px; display: inline-block;">Quick Links</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e2e8f0; opacity: 0.85; text-decoration: none; transition: all 0.3s;">→ About Us</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e2e8f0; opacity: 0.85; text-decoration: none; transition: all 0.3s;">→ Contact</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e2e8f0; opacity: 0.85; text-decoration: none; transition: all 0.3s;">→ Track Order</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e2e8f0; opacity: 0.85; text-decoration: none; transition: all 0.3s;">→ Shipping Info</a></li>
+                    <li style="margin-bottom: 10px;"><a href="{{urls.sitemap}}" style="color: #e2e8f0; opacity: 0.85; text-decoration: none; transition: all 0.3s;">→ Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Service Column -->
+            <div>
+                <h3 style="color: white; font-size: 18px; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid #667eea; padding-bottom: 10px; display: inline-block;">Customer Service</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e2e8f0; opacity: 0.85; text-decoration: none; transition: all 0.3s;">→ FAQ</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e2e8f0; opacity: 0.85; text-decoration: none; transition: all 0.3s;">→ Returns & Exchanges</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e2e8f0; opacity: 0.85; text-decoration: none; transition: all 0.3s;">→ Shipping Policy</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e2e8f0; opacity: 0.85; text-decoration: none; transition: all 0.3s;">→ Privacy Policy</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e2e8f0; opacity: 0.85; text-decoration: none; transition: all 0.3s;">→ Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Categories Column -->
+            <div>
+                <h3 style="color: white; font-size: 18px; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid #667eea; padding-bottom: 10px; display: inline-block;">Categories</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    {{#each (limit categories 5)}}
+                        <li style="margin-bottom: 10px;"><a href="{{url}}" style="color: #e2e8f0; opacity: 0.85; text-decoration: none; transition: all 0.3s;">→ {{name}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+
+        </div>
+
         {{#if theme_settings.social_icon_placement_bottom '!==' 'bottom_none'}}
-            <article class="footer-info-col
-                footer-info-col--social
-                footer-info-col--{{#if theme_settings.social_icon_placement_bottom '===' 'bottom_left'}}left{{else}}right{{/if}}"
-                data-section-type="footer-webPages">
-                    <h3 class="footer-info-heading">{{lang 'social.connect'}}</h3>
-                    {{> components/common/social-links}}
-            </article>
+            <div style="text-align: center; padding: 30px 0; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <h3 style="color: white; font-size: 18px; font-weight: 600; margin-bottom: 15px;">{{lang 'social.connect'}}</h3>
+                {{> components/common/social-links}}
+            </div>
         {{/if}}
-        <section class="footer-info">
+
+        <section class="footer-info" style="display: none;">
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
                 <h3 class="footer-info-heading">{{lang 'footer.navigate'}}</h3>
                 <ul class="footer-info-list">
@@ -78,16 +138,17 @@
                 {{> components/common/payment-icons}}
             </article>
         </section>
-        {{#if theme_settings.show_powered_by}}
-            <div class="footer-copyright">
-                <p class="powered-by">{{lang 'footer.powered_by'}} <a href="https://www.bigcommerce.com?utm_source=merchant&amp;utm_medium=poweredbyBC" rel="nofollow">BigCommerce</a></p>
-            </div>
-        {{/if}}
-        {{#if theme_settings.show_copyright_footer}}
-            <div class="footer-copyright">
-                <p class="powered-by">&copy; {{moment format="YYYY"}} {{settings.store_name}} </p>
-            </div>
-        {{/if}}
+        <!-- Demo: Payment Icons Section -->
+        <div style="text-align: center; padding: 30px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <h4 style="color: white; font-size: 14px; font-weight: 600; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Secure Payment Methods</h4>
+            {{> components/common/payment-icons}}
+        </div>
+
+        <!-- Demo: Modern Copyright Section -->
+        <div style="text-align: center; padding: 30px 0;">
+            <p style="margin: 0; opacity: 0.75; font-size: 14px;">&copy; {{moment format="YYYY"}} {{settings.store_name}}. All Rights Reserved.</p>
+            <p style="margin: 10px 0 0 0; opacity: 0.6; font-size: 13px;">Made with ❤️ for our customers</p>
+        </div>
     </div>
     {{{region name="ssl_site_seal--global"}}}
 </footer>

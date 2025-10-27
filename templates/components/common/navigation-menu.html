@@ -25,6 +25,115 @@
                  </li>
              {{/each}}
         {{/unless}}
+
+        <!-- Demo: Custom Navigation Tabs with Subtabs -->
+        <li class="navPages-item">
+            <a class="navPages-action has-subMenu"
+               href="#"
+               data-collapsible="navPages-collections"
+               aria-controls="navPages-collections"
+               aria-expanded="false"
+               aria-label="Collections"
+            >
+                Collections
+                <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                    <svg><use href="#icon-chevron-down"></use></svg>
+                </i>
+            </a>
+            <div class="navPage-subMenu" id="navPages-collections" aria-hidden="true" tabindex="-1">
+                <ul class="navPage-subMenu-list">
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Spring 2025</a>
+                    </li>
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Summer Essentials</a>
+                    </li>
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Best Sellers</a>
+                    </li>
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Limited Edition</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="navPages-item">
+            <a class="navPages-action has-subMenu"
+               href="#"
+               data-collapsible="navPages-lifestyle"
+               aria-controls="navPages-lifestyle"
+               aria-expanded="false"
+               aria-label="Lifestyle"
+            >
+                Lifestyle
+                <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                    <svg><use href="#icon-chevron-down"></use></svg>
+                </i>
+            </a>
+            <div class="navPage-subMenu" id="navPages-lifestyle" aria-hidden="true" tabindex="-1">
+                <ul class="navPage-subMenu-list">
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Home & Garden</a>
+                    </li>
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Travel Gear</a>
+                    </li>
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Fitness & Wellness</a>
+                    </li>
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Tech & Gadgets</a>
+                    </li>
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Eco-Friendly</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="navPages-item">
+            <a class="navPages-action has-subMenu"
+               href="#"
+               data-collapsible="navPages-special"
+               aria-controls="navPages-special"
+               aria-expanded="false"
+               aria-label="Special Offers"
+            >
+                Special Offers 🔥
+                <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                    <svg><use href="#icon-chevron-down"></use></svg>
+                </i>
+            </a>
+            <div class="navPage-subMenu" id="navPages-special" aria-hidden="true" tabindex="-1">
+                <ul class="navPage-subMenu-list">
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#"><strong>Clearance Sale - Up to 70% Off</strong></a>
+                    </li>
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Buy 2 Get 1 Free</a>
+                    </li>
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Flash Deals</a>
+                    </li>
+                    <li class="navPage-subMenu-item">
+                        <a class="navPage-subMenu-action navPages-action" href="#">Bundle & Save</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="navPages-item">
+            <a class="navPages-action" href="#" aria-label="Blog">
+                Blog
+            </a>
+        </li>
+
+        <li class="navPages-item">
+            <a class="navPages-action" href="#" aria-label="Contact">
+                Contact Us
+            </a>
+        </li>
     </ul>
     <ul class="navPages-list navPages-list--user">
         {{#if currency_selector.currencies.length '>' 1}}

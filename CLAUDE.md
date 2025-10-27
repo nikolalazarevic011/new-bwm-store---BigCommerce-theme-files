@@ -116,8 +116,54 @@ The icon ID is the filename prefixed with `icon-` (e.g., `#icon-facebook` for `f
 ### Stencil Configuration
 
 - `config.json` - Theme metadata, variations (Light/Bold/Warm), and theme settings
+- `schema.json` - Theme Editor UI configuration (defines editable fields in BigCommerce backend)
 - `stencil.conf.cjs` - Stencil development server configuration with webpack integration
 - `manifest.json` - Theme manifest file
+
+**Theme Settings System** - Making content editable from BigCommerce backend:
+
+1. **Define settings in `config.json`**:
+   ```json
+   {
+     "demo_hero_heading": "Welcome to Our Store",
+     "demo_show_hero_section": true
+   }
+   ```
+
+2. **Create UI fields in `schema.json`**:
+   ```json
+   {
+     "name": "Demo Sections",
+     "settings": [
+       {
+         "type": "text",
+         "label": "Hero Heading",
+         "id": "demo_hero_heading",
+         "force_reload": true
+       },
+       {
+         "type": "checkbox",
+         "label": "Show Hero Section",
+         "id": "demo_show_hero_section",
+         "force_reload": true
+       }
+     ]
+   }
+   ```
+
+3. **Use in templates with Handlebars**:
+   ```handlebars
+   {{#if theme_settings.demo_show_hero_section}}
+     <h1>{{theme_settings.demo_hero_heading}}</h1>
+   {{/if}}
+   ```
+
+**Important Constraints**:
+- **64-character limit**: Default text values in `config.json` that map to `type: "text"` fields in `schema.json` must be ≤64 characters
+- **Allowed field types in schema.json**: `text`, `checkbox`, `color`, `font`, `select`, `heading`, `paragraph` (NO `textarea`)
+- **Always add `force_reload: true`** to schema fields to refresh preview when values change
+- Local development uses `config.json` values; live store uses values from Theme Editor
+- Use `stencil pull` to sync live theme settings to local `config.json`
 
 ### Polyfilling Strategy
 

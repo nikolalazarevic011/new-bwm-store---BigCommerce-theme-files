@@ -3688,5 +3688,178 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Demo Sections",
+    "settings": [
+      {
+        "type": "heading",
+        "content": "Hero Section"
+      },
+      {
+        "type": "checkbox",
+        "label": "Show Hero Section",
+        "id": "demo_show_hero_section",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Hero Heading",
+        "id": "demo_hero_heading",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Hero Subheading",
+        "id": "demo_hero_subheading",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Hero Button Text",
+        "id": "demo_hero_button_text",
+        "force_reload": true
+      },
+      {
+        "type": "heading",
+        "content": "Features Section"
+      },
+      {
+        "type": "checkbox",
+        "label": "Show Features Section",
+        "id": "demo_show_features_section",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Features Heading",
+        "id": "demo_features_heading",
+        "force_reload": true
+      },
+      {
+        "type": "heading",
+        "content": "Testimonials Section"
+      },
+      {
+        "type": "checkbox",
+        "label": "Show Testimonials Section",
+        "id": "demo_show_testimonials_section",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Testimonials Heading",
+        "id": "demo_testimonials_heading",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Testimonial 1 Text",
+        "id": "demo_testimonial_1_text",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Testimonial 1 Author",
+        "id": "demo_testimonial_1_author",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Testimonial 2 Text",
+        "id": "demo_testimonial_2_text",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Testimonial 2 Author",
+        "id": "demo_testimonial_2_author",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Testimonial 3 Text",
+        "id": "demo_testimonial_3_text",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Testimonial 3 Author",
+        "id": "demo_testimonial_3_author",
+        "force_reload": true
+      },
+      {
+        "type": "heading",
+        "content": "CTA Section"
+      },
+      {
+        "type": "checkbox",
+        "label": "Show CTA Section",
+        "id": "demo_show_cta_section",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "CTA Heading",
+        "id": "demo_cta_heading",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "CTA Subheading",
+        "id": "demo_cta_subheading",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "CTA Button 1 Text",
+        "id": "demo_cta_button_1_text",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "CTA Button 2 Text",
+        "id": "demo_cta_button_2_text",
+        "force_reload": true
+      },
+      {
+        "type": "heading",
+        "content": "Footer Newsletter"
+      },
+      {
+        "type": "text",
+        "label": "Newsletter Heading",
+        "id": "demo_footer_newsletter_heading",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Newsletter Text",
+        "id": "demo_footer_newsletter_text",
+        "force_reload": true
+      },
+      {
+        "type": "heading",
+        "content": "Footer About"
+      },
+      {
+        "type": "text",
+        "label": "About Text",
+        "id": "demo_footer_about_text",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Phone Number",
+        "id": "demo_footer_phone",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Email Address",
+        "id": "demo_footer_email",
+        "force_reload": true
+      }
+    ]
   }
 ]
